@@ -1,0 +1,16 @@
+<html>
+    <head>
+       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+        {% block head %}
+	    <title></title>
+	    {% endblock %}
+    </head>
+    <body>
+        <di
+        <div class="container-fluid">
+            {% block body %}
+                <h1>{% if title %} {{ title|upper }}{% endif %}</h1>
+            {% endblock %}
+        </div>
+    </body>
+</html>
